@@ -11,20 +11,20 @@
         <h2>Личное мини портфолио</h2> 
     </header> 
     <nav> 
-        <a href="#">Купить</a> 
+        <a class="button" id="input_button_bg_change" value="Change background color" href="#">Купить</a> 
         <a href="#">О себе</a> 
         <a href="#">Контакты</a> 
     </nav> 
     <div>   
          <h1>Ким Леонид</h1>   
-    
+
         <img class="i" src="trweqre.png" alt="https://i.ytimg.com/vi/O_yB_cRnlm8/maxresdefault.jpg"   width="700px" >  
         <div class="x"> 
             <p>что я умею:</p>   
             <div> 
                 <c>Css</c>  
          <d>ㅤ</d> <d>ㅤ</d> <b>ㅤ</b> <b>ㅤ</b> 
-           
+
          <a>ㅤㅤ</a> 
          <c>c++</c>  
          <d>ㅤ</d> <d>ㅤ</d> <d>ㅤ</d> <b>ㅤ</b> 
@@ -44,13 +44,13 @@
     <div>  
          <u class="textcenter">ㅤ</u> 
     </div> 
-   
+
     <div class="k"> 
         <img class="j"  src="https://kartinki.pics/uploads/posts/2022-03/1647411875_2-kartinkin-net-p-kartinki-serogo-tsveta-2.png" alt="https://about.me/s3/h/z/social.2ec36ec3.png" width="500px" height="500px"> 
          <h3>Меня зовут Ким Леонид 2, я ученик 9D класса школы РФМШ в г Алматы. Мой год рождения 2008. Владею русским и немного английским язык. 0 лет опыта в Css, c++, c sharp и pithon. </h3> 
     </div> 
       <h4>Кто я вообще?</h4> 
- 
+
     </div>   
     <div class="q"> 
     <img class="qw" src="https://i.pinimg.com/originals/15/e7/12/15e71221f387f17c6a89023bd1714fc5.jpg" alt="https://i.pinimg.com/originals/15/e7/12/15e71221f387f17c6a89023bd1714fc5.jpg"> 
@@ -66,29 +66,69 @@
 <h5>       https://medium.com/@leonidkim29/a-kitchen-knife-capable-of-cutting-through-any-foodstuffs-3cd9bb462a81
     </h5>
     </div> 
+    <div class="tochki">
+        <w>..........</w>
+        <w>..........</w>
+    </div>
+    <div class="toch">
+        <div><w>.......</w></div>
+        <div><w>.......</w></div>
+        <div><w>.......</w></div>
+        <div><w>.......</w></div>
+        <div><w>.......</w></div>
+        
+        
+    </div>
+    <div class="sozseti">
+        <div><h6> Также вы можете найти меня в:</h6></div>
+        <img  height="150px" src="https://maxst.icons8.com/vue-static/icon/popular-request/request-social-media.png" alt="https://maxst.icons8.com/vue-static/icon/popular-request/request-social-media.png">
+    </div>
     <div class="uz" >
     <h6>Свяжитесь со мной</h6>
     <form action="submit_contact.php" method="post">
         <label for="name">Ваше Имя:</label><br>
         <input type="text" id="name" name="name" required><br><br>
-        
-      
+
+
         <label for="message">Сообщение:</label><br>
         <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
-        
+
         <input type="submit" value="Отправить">
     </form>
 </div>
+
 <footer>
     <f>© Сделано в 2024г. компанией aaa.leonidkim.bbb </f>
 </footer>
 </body>
 <style>
+    .sozseti{
+        position: absolute;
+        top: 2020px;
+        left: 600px;
+        color: white;
+    }
+    .toch{
+        position: absolute;
+        color: white;
+        top:900px;
+        right:100px;
+    }
+    .tochki{
+        top: 100px;
+       
+        position: absolute;
+        color: white;
+    }
+    w{
+        color: white;
+        font-size: 100px;
+        border-radius: 100%;
+    }
     .q{ 
   top: 50px; 
   left: 100px; 
   position: absolute; 
-display flex; 
 position: relative; 
 
 } 
@@ -188,12 +228,12 @@ border-radius: 100%;
 background-color: #a7a5a5; 
 } 
 b{ 
- 
+
   height: 15px; 
   width: 15px; 
   border-radius: 100%; 
   background-color: #494848; 
- 
+
 } 
 .j{ 
 border-radius: 160%; 
@@ -228,7 +268,7 @@ h5{
   display flex; 
   position: relative; 
   color: white; 
-  
+
 }
 h6{
   color: white;
@@ -247,6 +287,7 @@ footer {
   text-align: center;
   padding: 20px;
 }
+
 body { 
             font-family: Arial, sans-serif; 
             margin: 0; 
@@ -292,3 +333,13 @@ body {
             text-align: center; 
           }
 </style>
+<script type="text/javascript">
+    window.onload = function() {
+        var button = document.getElementById('input_button_bg_change');
+        var body = document.getElementsByTagName('body')[0];
+        var colors = ['blue', 'grey', 'black', 'white', 'red', 'green', '#aaa', '#FFAACC', 'rgb(122,111,110)'];
+        button.onclick = function() {
+            body.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+        };
+    };
+    </script>
